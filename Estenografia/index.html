@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esteganografia</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- sweet alert -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Mensaje secreto con Esteganografía</h1>
+        <form id="steganography-form">
+            <div class="form-group">
+                <label for="image-input">Cargar Imagen:</label>
+                <input type="file" id="image-input" accept="image/*">
+            </div>
+            <div class="form-group">
+                <label for="message-input">Ingresar Mensaje:</label>
+                <textarea id="message-input" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="button" id="hide-message-btn">Ocultar Mensaje</button>
+                <button type="button" id="extract-message-btn">Extraer Mensaje</button>
+            </div>
+        </form>
+        <canvas id="image-canvas" style="display: none;"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
